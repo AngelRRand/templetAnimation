@@ -7,18 +7,51 @@ const Animation4 = () => {
     const [ animacion2 ] = useState(new Animated.Value(-50));
 
     useEffect(() => {
-        Animated.sequence([
-            Animated.timing(animacion2,{
-                toValue:-30,
-                duration:1000,
-                useNativeDriver: true
-            }),
-            Animated.timing(animacion,{
-                toValue:50,
-                duration:1000,
-                useNativeDriver: true
-            })
-        ]).start()
+        Animated.loop(
+            Animated.sequence([
+                Animated.timing(animacion2,{
+                    toValue:-30,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion,{
+                    toValue:60,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion2,{
+                    toValue:30,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion,{
+                    toValue:0,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion2,{
+                    toValue:-30,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion,{
+                    toValue:60,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion2,{
+                    toValue:-50,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+                Animated.timing(animacion,{
+                    toValue:0,
+                    duration:1000,
+                    useNativeDriver: true
+                }),
+            ])    
+        ).start()
+        
     }, []);
 
     const estiloAnimacion = {
