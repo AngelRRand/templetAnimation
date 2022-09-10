@@ -1,14 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import AnimationOne from './src/Animation1';
+import Animation2 from './src/Animation2';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <View>
-        <AnimationOne/>
+    <>
+
+      <StatusBar />
+      <View style={styles.container}>
+          <AnimationOne />
+          <Animation2 />
       </View>
-    </View>
+    </>
   );
 }
 

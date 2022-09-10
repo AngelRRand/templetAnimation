@@ -9,7 +9,7 @@ const AnimationOne = () => {
         Animated.timing(
             animacion,{
                 toValue:1,
-                duration:500,
+                duration:2500,
                 useNativeDriver: true
             }
         ).start()
@@ -21,14 +21,14 @@ const AnimationOne = () => {
                 opacity: animacion,
             }}
         >
-            <Text>Animacion 1</Text>
+            <Text style={styles.Text}>Animacion 1</Text>
         </Animated.View>
     );
 }
 
 const styles = StyleSheet.create({
     Text:{
-        fontSize:30,
+        fontSize:50,
         textAlign:'center'
     }
 })
