@@ -6,12 +6,15 @@ const Animation4 = () => {
     const [ animacion ] = useState(new Animated.Value(0));
 
     useEffect(() => {
-        Animated.timing(
-            animacion,{
-                toValue:360,
-                duration:2500,
-                useNativeDriver: true
-            }
+        Animated.loop(
+
+            Animated.timing(
+                animacion,{
+                    toValue:360,
+                    duration:2500,
+                    useNativeDriver: true
+                }
+            )
         ).start()
     }, []);
 

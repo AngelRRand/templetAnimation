@@ -32,7 +32,7 @@ const Animation5 = () => {
         >
             <Animated.View style={[styles.btn, estiloAnimacion]}>
                 <Text style={styles.text}>
-                    Iniciar Sesion
+                    Animacion 5
                 </Text>
             </Animated.View>
         </TouchableWithoutFeedback>

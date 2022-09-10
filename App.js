@@ -6,6 +6,7 @@ import Animation3 from './src/Animation3';
 import Animation4 from './src/Animation4';
 import Animation5 from './src/Animation5';
 import Animation6 from './src/Animation6';
+import Animation7 from './src/Animation7';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Animation4 />
           <Animation5 />
           <Animation6 />
+          <Animation7 />
       </View>
     </>
   );
