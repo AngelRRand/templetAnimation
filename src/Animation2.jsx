@@ -8,7 +8,7 @@ const Animation2 = () => {
     useEffect(() => {
         Animated.timing(
             animacion,{
-                toValue:500,
+                toValue:300,
                 duration:1000,
                 useNativeDriver: false
             }
@@ -25,15 +25,22 @@ const Animation2 = () => {
                 }
             ]}
         >
+            <Text style={styles.Text}>Animacion 2</Text>
         </Animated.View>
     );
 }
 
 const styles = StyleSheet.create({
     caja:{
+        justifyContent:'center',
         width: 100,
         height: 100,
-        backgroundColor:'blue',
+        backgroundColor:'#ee8e8e',
+    },
+    Text:{
+        fontSize:40,
+        textAlign:'center',
+
     }
 })
 

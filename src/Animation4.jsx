@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { StyleSheet, Animated, Text} from 'react-native';
 
-const AnimationOne = () => {
+const Animation4 = () => {
 
     const [ animacion ] = useState(new Animated.Value(0));
 
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default AnimationOne;
+export default Animation4;
