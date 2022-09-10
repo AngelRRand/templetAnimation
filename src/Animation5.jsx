@@ -15,6 +15,8 @@ const Animation5 = () => {
     const SoltarBoton= ()=>{
         Animated.spring(animacion, {
             toValue: 1,
+            friction:4,   //mas bajo, mayor rebote
+            tension:20,   //Suavidad
             useNativeDriver: true
         }).start();
     }
